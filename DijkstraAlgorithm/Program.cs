@@ -23,7 +23,6 @@ namespace DijkstraAlgorithm
             FillGraph(Graph);
             FillCosts(Costs);
             FillParents(Parents);
-            
             Console.WriteLine(FindPath(FindLowCostNode(Costs)));
             Console.ReadLine();
         }
@@ -46,7 +45,6 @@ namespace DijkstraAlgorithm
                 Processed.Add(node);
                 node = FindLowCostNode(Costs);
             }
-
             return (string.Join(", ", Costs));
         }
 
